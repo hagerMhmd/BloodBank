@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .slick-prev, .slick-next {
+  position: static;
+} */
+.slick-dots li button:before {
+  content: '' !important;
+  width: 60px !important;
+  background-color: black !important;
+  height: 5px !important;
+}
+.slick-dots li {
+  width: 100px !important;
+  margin: 0 !important;
+}
+.slick-dots{
+  display: block !important;
+  bottom: 5% !important;
+}

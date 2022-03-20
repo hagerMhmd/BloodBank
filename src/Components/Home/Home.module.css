@@ -1,0 +1,22 @@
+/* .wdt{  
+    width: 100%  !important; 
+     background-color: tomato !important; 
+}   */
+.bg {
+	height: 100vh !important;
+	background-image: url(../../Imgs/Coachella-Slider.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: cover;
+}
+.bg2 {
+	height: 100vh !important;
+	background-image: url(../../Imgs/Website-Sliders-2021-7.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: cover;
+}
+.fss{
+    font-size: 4rem !important;
+    font-weight: bolder;
+}
