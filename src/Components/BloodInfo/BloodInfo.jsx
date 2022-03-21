@@ -9,7 +9,7 @@ import img4 from '../../Imgs/Heart-Article-Hero-1200x500.gif'
 
 export default function BloodInfo() {
     return <>
-        <section className='py-5 px-3'>
+        <section className='px-3'>
             <div className="container py-5 mt-5">
                 <div className={`${style.bg} row ps-4 shadow my-5 rounded-3 py-5 align-items-center`}>
                     <div className="col-md-5 py-5">
@@ -45,7 +45,7 @@ export default function BloodInfo() {
             </div>
         </section>
         <section >
-            <div className="container py-5 mt-5">
+            <div className="container py-md-5 py-3 mt-md-5">
                 <div className={`row ps-4 shadow my-5 rounded-3 py-5 align-items-center`}>
                     <div className="col-md-5 py-5">
                         <div className="bloodInfo-items">
@@ -62,7 +62,7 @@ export default function BloodInfo() {
             </div>
         </section>
         <section className={`${style.sectionBg} py-5 px-3`}>
-            <div className={`${style.sectionBg} container`}>
+            <div className={`${style.sectionBg} container py-md-5`}>
                 <div className="row align-items-center">
                     <div className="col-md-5 order-1 order-md-0  py-5">
                         <div className="item">

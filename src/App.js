@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
 import BloodInfo from './Components/BloodInfo/BloodInfo';
+import BloodType from './Components/BloodType/BloodType';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import LastesNews from './Components/LastesNews/LastesNews';
@@ -21,6 +22,7 @@ function App() {
       <Route path='/lastesnews' element={<LastesNews />} />
       <Route path='/testimonials' element={<Testimonials />} />
       <Route path='/bloodInfo' element={<BloodInfo/>} />
+      <Route path='/bloodtype' element={<BloodType/>} />
       <Route path='*' element={<h1>404</h1>} />
     </Routes>
     <Footer />
