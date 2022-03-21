@@ -6,7 +6,7 @@ import style from './style.module.css'
 
 export default function NavBar() {
     return <>
-        {/* <nav className="navbar navbar-expand-lg navbar-dark py-4 bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark py-4 bg-dark fixed-top">
             <div className="container-fluid">
                 <div className="ms-lg-5 ms-3">
                     <img src={logo} className={style.logo} alt="" />
@@ -31,6 +31,6 @@ export default function NavBar() {
                     </ul>
                 </div>
             </div>
-        </nav> */}
+        </nav>
     </>
 }

@@ -1,13 +1,11 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import style from './DonateBox.module.css'
 import icon1 from '../../Imgs/icon-01.png'
 import icon2 from '../../Imgs/icon-02.png'
 import icon3 from '../../Imgs/icon-03.png'
 import icon4 from '../../Imgs/icon-04.png'
-export default function DonateBox() {
 
+export default function DonateBox() {
     return <>
         <div className={`${style.donateColor}`}>
             <div className="container text-white text-center">
@@ -33,7 +31,7 @@ export default function DonateBox() {
                     <div className={`col-md-3 ${style.donatesHover} `}>
                         <Link to='/about' className={`text-decoration-none m-0 text-white`}>
                             <img src={icon4} className='py-5' alt="" />
-                            <h1 className='text-uppercase pb-5 mb-0'>Share Your <br /> story </h1>
+                            <h1 className='text-uppercase pb-5 mb-0'>host a blood drive</h1>
                         </Link>
                     </div>
                 </div>

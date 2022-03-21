@@ -21,7 +21,7 @@ export default function Home() {
     slidesToScroll: 1
   };
   return <>
-    {/* <div className='overflow-hidden'>
+    <div className='overflow-hidden'>
       <Slider {...settings} >
         <div className={`${style.bg} px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
       </Slider>
-    </div> */}
+    </div>
     <DonateBox/>
   </>
 }
