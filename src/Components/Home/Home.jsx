@@ -8,6 +8,7 @@ import Slider from "react-slick";
 // import './slickdemo.css';  
 import style from './Home.module.css'
 import { Link } from 'react-router-dom';
+import DonateBox from '../DonateBox/DonateBox';
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
     slidesToScroll: 1
   };
   return <>
-    <div className='overflow-hidden'>
+    {/* <div className='overflow-hidden'>
       <Slider {...settings} >
         <div className={`${style.bg} px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
@@ -41,6 +42,7 @@ export default function Home() {
           </div>
         </div>
       </Slider>
-    </div>
+    </div> */}
+    <DonateBox/>
   </>
 }

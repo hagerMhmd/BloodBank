@@ -1,0 +1,12 @@
+.donateColor{
+    background-color:  #ab182c !important;
+}
+.donateIcon{
+    font-size: 4.4rem;
+}
+.donatesHover{
+    transition: all 0.2s;
+}
+.donatesHover:hover{
+    background-color: #951526 !important;
+}
