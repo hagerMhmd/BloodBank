@@ -3,7 +3,7 @@
 } */
 .slick-dots li button:before {
   content: '' !important;
-  width: 60px !important;
+  width: 90px !important;
   background-color: black !important;
   height: 5px !important;
 }

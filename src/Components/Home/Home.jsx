@@ -26,7 +26,7 @@ export default function Home() {
         <div className={`${style.bg} px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
             <h2 className="py-2">You could win a VIP</h2>
-            <h1 className={`${style.fss} py-2`}>Coachella Experience!</h1>
+            <h1 className={`${style.font} py-2`}>Coachella Experience!</h1>
             <h5 className='py-2'>Give Blood March 13-April for a chance to win</h5>
             <br />
             <Link className='btn text-dark btn-light my-3 rounded-pill px-4 py-2' to='/about'>Learn More</Link>
@@ -35,7 +35,7 @@ export default function Home() {
         <div className={`${style.bg2} py-5 px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
             <h2 className="py-2">Critical Blood Shortage</h2>
-            <h1 className={`${style.fss} py-2`}>You Are Needed!</h1>
+            <h1 className={`${style.font} py-2`}>You Are Needed!</h1>
             <h5 className='py-2'>Blood donations are needed now to avert the need to postpone potential <br />  lifesaving treatments at local hospitals.</h5>
             <br />
             <Link className='btn text-dark btn-light my-3 rounded-pill px-4 py-2' to='/about'>Learn More</Link>

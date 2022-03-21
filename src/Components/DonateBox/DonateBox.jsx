@@ -10,28 +10,28 @@ export default function DonateBox() {
         <div className={`${style.donateColor}`}>
             <div className="container text-white text-center">
                 <div className="row">
-                    <div className={`col-md-3 ${style.donatesHover} `}>
-                        <Link to='/about' className={`text-decoration-none m-0 text-white`}>
-                            <img src={icon1} className='py-5 my-2' alt="" />
-                            <h1 className='text-uppercase pb-5 mb-0'>Blood Donor basics </h1>
+                    <div className={`col-md-3 col-sm-6 ${style.donatesHover}`}>
+                        <Link to='/bloodInfo' className={`text-decoration-none m-0 text-white`}>
+                            <img src={icon1} className={`${style.imgSize} py-5 my-2`} alt="" />
+                            <h3 className='text-uppercase pb-5 mb-0'>Blood Donor basics </h3>
                         </Link>
                     </div>
-                    <div className={`col-md-3 ${style.donatesHover} `}>
+                    <div className={`col-md-3 col-sm-6 ${style.donatesHover} `}>
                         <Link to='/about' className={`text-decoration-none m-0 text-white`}>
-                            <img src={icon2} className='py-5' alt="" />
-                            <h1 className='text-uppercase pb-5 mb-0 '>Target Your Type®</h1>
+                            <img src={icon2} className={`${style.imgSize} py-5 my-2`}alt="" />
+                            <h3 className='text-uppercase pb-5 mb-0 '>Target Your Type®</h3>
                         </Link>
                     </div>
-                    <div className={`col-md-3 ${style.donatesHover} `}>
+                    <div className={`col-md-3 col-sm-6 ${style.donatesHover} `}>
                         <Link to='/about' className={`text-decoration-none m-0 text-white`}>
-                            <img src={icon3} className='py-5' alt="" />
-                            <h1 className='text-uppercase pb-5 mb-0'>Donate <br /> Now </h1>
+                            <img src={icon3} className={`${style.imgSize3} py-5 my-2`} alt="" />
+                            <h3 className='text-uppercase pb-5 mb-0'>Donate <br /> Now </h3>
                         </Link>
                     </div>
-                    <div className={`col-md-3 ${style.donatesHover} `}>
+                    <div className={`col-md-3 col-sm-6 ${style.donatesHover} `}>
                         <Link to='/about' className={`text-decoration-none m-0 text-white`}>
-                            <img src={icon4} className='py-5' alt="" />
-                            <h1 className='text-uppercase pb-5 mb-0'>host a blood drive</h1>
+                            <img src={icon4} className={`${style.imgSize} py-5 my-2`} alt="" />
+                            <h3 className='text-uppercase pb-5 mb-0'>host a blood drive</h3>
                         </Link>
                     </div>
                 </div>

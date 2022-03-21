@@ -10,3 +10,19 @@
 .donatesHover:hover{
     background-color: #951526 !important;
 }
+.imgSize{
+    width: 80px;
+    height: 170px;
+}
+/* .imgSize2{
+    width: 80px;
+    height: 170px;
+} */
+.imgSize3{
+    width: 70px;
+    height: 170px;
+}
+/* .imgSize4{
+    width: 80px;
+    height: 170px;
+} */

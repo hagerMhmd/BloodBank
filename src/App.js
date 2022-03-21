@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
+import BloodInfo from './Components/BloodInfo/BloodInfo';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import LastesNews from './Components/LastesNews/LastesNews';
@@ -19,6 +20,7 @@ function App() {
       <Route path='/supportus' element={<SupportUs />} />
       <Route path='/lastesnews' element={<LastesNews />} />
       <Route path='/testimonials' element={<Testimonials />} />
+      <Route path='/bloodInfo' element={<BloodInfo/>} />
       <Route path='*' element={<h1>404</h1>} />
     </Routes>
     <Footer />
