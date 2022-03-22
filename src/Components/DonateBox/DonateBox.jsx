@@ -23,7 +23,7 @@ export default function DonateBox() {
                         </Link>
                     </div>
                     <div className={`col-md-3 col-sm-6 ${style.donatesHover} `}>
-                        <Link to='/about' className={`text-decoration-none m-0 text-white`}>
+                        <Link to='/donatenow' className={`text-decoration-none m-0 text-white`}>
                             <img src={icon3} className={`${style.imgSize3} py-5 my-2`} alt="" />
                             <h3 className='text-uppercase pb-5 mb-0'>Donate <br /> Now </h3>
                         </Link>

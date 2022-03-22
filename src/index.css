@@ -19,7 +19,8 @@
 	font-size: 80px !important;
 	font-weight: 700;
 }
-.type-o- , .bloodMethods{
+.type-o-,
+.bloodMethods {
 	background-color: #ab192d;
 }
 .type-o-positive {
@@ -48,4 +49,8 @@
 	width: 20rem;
 	height: 1px;
 	text-align: center !important;
+}
+/* O Negative type */
+.h2Color {
+	color: #ab192d;
 }

@@ -50,7 +50,7 @@ export default function BloodType() {
             <div className="container">
                 <div className="row text-center justify-content-start justify-content-md-center">
                     <div className="col-lg-3 type-o- col-md-5 col-sm-6 p-5 p-md-4">
-                        <Link className='text-decoration-none text-white' to='/home'>
+                        <Link className='text-decoration-none text-white' to='/onegative'>
                             <h1 className='p-5'>O-</h1>
                         </Link>
                     </div>
