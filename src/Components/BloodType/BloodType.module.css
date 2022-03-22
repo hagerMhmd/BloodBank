@@ -4,3 +4,6 @@
 .shareIcons i{
     cursor: pointer;
 }
+.sectionColor{
+    background-color: rgb(235, 235, 235);
+}

@@ -1,11 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import { Link } from 'react-router-dom'
 import style from './BloodType.module.css'
 import img from '../../Imgs/Target-Your-Type.png'
 import tagetVideo from '../../Imgs/Target Your Type _ OneBlood.mp4'
+import wholeBlood from '../../Imgs/whole-blood-icon.png'
+import doubleRed from '../../Imgs/double-red-icon.png'
+import platelets from '../../Imgs/platelets-icon.png'
+import plasma from '../../Imgs/plasma-icon.png'
 
 export default function BloodType() {
-    
     return <>
         <section className='py-5'>
             <div className="container pt-5">
@@ -29,11 +33,11 @@ export default function BloodType() {
                                 </div>
                                 <div className="col-md-5 offset-0 offset-md-1">
                                     <div className={`${style.shareIcons} d-flex`}>
-                                    <h6 className='text-primary pt-2 pe-4'>SHARE</h6>
-                                    <i className="fa-brands fs-4 px-2 py-1 text-primary fa-facebook-square"></i>
-                                    <i className="fa-brands fs-4 px-2 py-1 text-info fa-twitter-square"></i>
-                                    <i className="fa-brands fs-4 px-2 py-1 text-danger fa-google-plus-square"></i>
-                                    <i className="fa-brands fs-4 px-2 py-1  text-danger fa-pinterest-square"></i>
+                                        <h6 className='text-primary pt-2 pe-4'>SHARE</h6>
+                                        <i className="fa-brands fs-4 px-2 py-1 text-primary fa-facebook-square"></i>
+                                        <i className="fa-brands fs-4 px-2 py-1 text-info fa-twitter-square"></i>
+                                        <i className="fa-brands fs-4 px-2 py-1 text-danger fa-google-plus-square"></i>
+                                        <i className="fa-brands fs-4 px-2 py-1  text-danger fa-pinterest-square"></i>
                                     </div>
                                 </div>
                             </div>
@@ -42,11 +46,100 @@ export default function BloodType() {
                 </div>
             </div>
         </section>
+        <section id='bloodType' className={`${style.sectionColor} my-5`}>
+            <div className="container">
+                <div className="row text-center justify-content-start justify-content-md-center">
+                    <div className="col-lg-3 type-o- col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>O-</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-o-positive col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>O+</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-a- col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>A-</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-a-positive col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>A+</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-b- col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>B-</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-b-positive col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>B+</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-ab- col-md-5 col-sm-6 p-5 p-md-4">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>AB-</h1>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 type-ab-positive col-md-5 col-sm-6 p-5 p-md-4 ">
+                        <Link className='text-decoration-none text-white' to='/home'>
+                            <h1 className='p-5'>AB+</h1>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className='py-5 text-center'>
+            <div className="container">
+                <div className="DonaionMethodsTitle d-flex flex-column justify-content-center align-items-center">
+                    <h2 className='py-2 table'>Donation Methods</h2>
+                    <div className="brdr"></div>
+                    <p className='py-2 fs-5'> more than one way to give blood. Let your blood type lead the way in targeting the best way for you to donate your powerful lifesaving gift.</p>
+                </div>
+                <div className="row">
+                    <div className="col-lg-3 col-md-6 mb-3">
+                        <Link to={`/about`} className='text-decoration-none text-white'>
+                            <div className="bloodMethods py-3">
+                                <img src={wholeBlood} className='w-25 pt-3' alt="" />
+                                <h4 className='pt-3 text-uppercase'>Whole Blood <br /> Donation</h4>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-3">
+                        <Link to={`/about`} className='text-decoration-none text-white'>
+                            <div className="bloodMethods py-3">
+                                <img src={doubleRed} className='w-25 pt-3' alt="" />
+                                <h4 className='pt-3 text-uppercase'>Double Red <br /> Cell Donation</h4>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-3">
+                        <Link to={`/about`} className='text-decoration-none text-white'>
+                            <div className="bloodMethods py-3">
+                                <img src={platelets} className='w-25 pt-3' alt="" />
+                                <h4 className='pt-3 text-uppercase'>Platelet <br /> Donation</h4>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-3">
+                        <Link to={`/about`} className='text-decoration-none text-white'>
+                            <div className="bloodMethods py-3">
+                                <img src={plasma} className='w-25 pt-3' alt="" />
+                                <h4 className='pt-3 text-uppercase'>Plasma <br /> Donation</h4>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </section>
     </>
 }
 
 
-// 2682095355411600
+
 
 
 
