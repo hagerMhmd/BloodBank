@@ -1,24 +1,18 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 import React, { useState } from 'react'
 
 export default function DonateNow() {
     const [locationSatate, setLocationSatate] = useState(null)
-
     function successCallback(loc) {
         console.log(loc);
-        setLocationSatate('succefuly locaiton')
+        setLocationSatate('successfully get locaiton')
     }
     function errorCallback(err) {
         console.log(err);
-        setLocationSatate('error locaiton')
+        setLocationSatate('error')
     }
     function getLocation() {
         navigator.geolocation.getCurrentPosition(successCallback, errorCallback)
     }
-
-
-
     return <>
         <section className='py-5'>
             <div className="container py-5">
@@ -26,9 +20,7 @@ export default function DonateNow() {
                 <h5 className='h2Color text-center '>Be a part of the 10% that donate blood</h5>
                 <button onClick={getLocation} className='btn btn-outline-primary'>Find You Location</button>
                 <span className='text-danger alert'>{locationSatate}</span>
-
             </div>
         </section>
-
     </>
 }
