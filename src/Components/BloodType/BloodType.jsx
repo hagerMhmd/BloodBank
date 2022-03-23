@@ -75,17 +75,17 @@ export default function BloodType() {
                         </Link>
                     </div>
                     <div className="col-lg-3 type-b-positive col-md-5 col-sm-6 p-5 p-md-4">
-                        <Link className='text-decoration-none text-white' to='/home'>
+                        <Link className='text-decoration-none text-white' to='/bpositive'>
                             <h1 className='p-5'>B+</h1>
                         </Link>
                     </div>
                     <div className="col-lg-3 type-ab- col-md-5 col-sm-6 p-5 p-md-4">
-                        <Link className='text-decoration-none text-white' to='/home'>
+                        <Link className='text-decoration-none text-white' to='/abnegative'>
                             <h1 className='p-5'>AB-</h1>
                         </Link>
                     </div>
                     <div className="col-lg-3 type-ab-positive col-md-5 col-sm-6 p-5 p-md-4 ">
-                        <Link className='text-decoration-none text-white' to='/home'>
+                        <Link className='text-decoration-none text-white' to='/abpositive'>
                             <h1 className='p-5'>AB+</h1>
                         </Link>
                     </div>
