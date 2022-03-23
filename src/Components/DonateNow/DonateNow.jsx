@@ -1,7 +1,28 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function DonateNow() {
+    const [values, setValues] = useState([
+        {
+            type: '',
+            unit: '',
+            disease: '',
+            age: ''
+        },
+    ])
+    function getDonateInfo(e) {
+        let myValue = { ...values }
+        myValue[e.target.name] = e.target.value
+        setValues(myValue)
+        console.log(myValue);
+        console.log(values);
+    }
+    useEffect(() => {
+        setValues()
+    }, [])
+    useEffect(() => {
+    }, [values])
+
     return <>
         <section className='py-5 mt-4'>
             <div className="container w-50 pb-5 mt-5">
@@ -14,7 +35,7 @@ export default function DonateNow() {
                                     <label className='fw-bold' htmlFor="selectArea">Blood Group</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <select className='form-select' name="bloodGroup" id="selectArea">
+                                    <select onChange={getDonateInfo} className='form-select' name="bloodGroup" id="selectArea">
                                         <option value="O-">O-</option>
                                         <option value="O+">O+</option>
                                         <option value="A-">A-</option>
@@ -28,26 +49,26 @@ export default function DonateNow() {
                             </div>
                             <div className="row ps-md-5 my-3 align-items-center">
                                 <div className="col-md-3">
-                                    <label className='fw-bold' htmlFor="">Unit (in ml)</label>
+                                    <label className='fw-bold' htmlFor="unit">Unit (in ml)</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="number" className='form-control' />
+                                    <input onChange={getDonateInfo} type="number" id='unit' name='unit' className='form-control' />
                                 </div>
                             </div>
                             <div className="row ps-md-5 my-3 align-items-center">
                                 <div className="col-md-3">
-                                    <label className='fw-bold' htmlFor="">Disease (if any)</label>
+                                    <label className='fw-bold' htmlFor="disease">Disease (if any)</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" className='form-control' placeholder='' />
+                                    <input onChange={getDonateInfo} type="text" id='disease' name='disease' className='form-control' placeholder='' />
                                 </div>
                             </div>
                             <div className="row ps-md-5 my-3 align-items-center">
                                 <div className="col-md-3">
-                                    <label className='fw-bold' htmlFor="">Age</label>
+                                    <label className='fw-bold' htmlFor="age">Age</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="number" className='form-control' placeholder='' />
+                                    <input onChange={getDonateInfo} type="number" id='age' name='age' className='form-control' placeholder='' />
                                 </div>
                             </div>
                             <div className="row ps-md-5">
@@ -62,3 +83,23 @@ export default function DonateNow() {
         </section>
     </>
 }
+
+
+
+// const [locationSatate, setLocationSatate] = useState(null)
+// function successCallback(loc) {
+//     console.log(loc);
+//     setLocationSatate('successfully get locaiton')
+// }
+// function errorCallback(err) {
+//     console.log(err);
+//     setLocationSatate('error')
+// }
+// function getLocation() {
+//     navigator.geolocation.getCurrentPosition(successCallback, errorCallback)
+// }
+
+// {/* <h2 className='h2Color text-center pt-5'>Find A Blood Drive or Donor Center</h2>
+// <h5 className='h2Color text-center '>Be a part of the 10% that donate blood</h5>
+// <button onClick={getLocation} className='btn btn-outline-primary'>Find You Location</button>
+// <span className='text-danger alert'>{locationSatate}</span> */}
