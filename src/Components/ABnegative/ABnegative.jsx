@@ -12,6 +12,7 @@ export default function ABnegative() {
             RedCells='AB-, AB+'
             Platelets='Anyone'
             Plasma='Anyone'
+            typeStyle ='type-ab-'
         />
     </>
 }

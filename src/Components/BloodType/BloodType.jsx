@@ -99,38 +99,30 @@ export default function BloodType() {
                     <div className="brdr"></div>
                     <p className='py-2 fs-5'> more than one way to give blood. Let your blood type lead the way in targeting the best way for you to donate your powerful lifesaving gift.</p>
                 </div>
-                <div className="row">
+                <div className="row text-white">
                     <div className="col-lg-3 col-md-6 mb-3">
-                        <Link to={`/about`} className='text-decoration-none text-white'>
                             <div className="bloodMethods py-3">
                                 <img src={wholeBlood} className='w-25 pt-3' alt="" />
                                 <h4 className='pt-3 text-uppercase'>Whole Blood <br /> Donation</h4>
                             </div>
-                        </Link>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-3">
-                        <Link to={`/about`} className='text-decoration-none text-white'>
                             <div className="bloodMethods py-3">
                                 <img src={doubleRed} className='w-25 pt-3' alt="" />
                                 <h4 className='pt-3 text-uppercase'>Double Red <br /> Cell Donation</h4>
                             </div>
-                        </Link>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-3">
-                        <Link to={`/about`} className='text-decoration-none text-white'>
                             <div className="bloodMethods py-3">
                                 <img src={platelets} className='w-25 pt-3' alt="" />
                                 <h4 className='pt-3 text-uppercase'>Platelet <br /> Donation</h4>
                             </div>
-                        </Link>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-3">
-                        <Link to={`/about`} className='text-decoration-none text-white'>
                             <div className="bloodMethods py-3">
                                 <img src={plasma} className='w-25 pt-3' alt="" />
                                 <h4 className='pt-3 text-uppercase'>Plasma <br /> Donation</h4>
                             </div>
-                        </Link>
                     </div>
                 </div>
             </div>

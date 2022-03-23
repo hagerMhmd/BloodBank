@@ -12,6 +12,7 @@ export default function Anegative() {
             RedCells='Anyone'
             Platelets='O-, O+'
             Plasma='O-, O+'
+            typeStyle ='type-a-'
         />
     </>
 }

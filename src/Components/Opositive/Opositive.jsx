@@ -12,6 +12,7 @@ export default function Opositive() {
             RedCells='Anyone'
             Platelets='O-, O+'
             Plasma='O-, O+'
+            typeStyle ='type-o-positive'
         />
     </>
 }

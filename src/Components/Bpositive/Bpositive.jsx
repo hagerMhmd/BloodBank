@@ -12,6 +12,7 @@ export default function Bpositive() {
             RedCells='B+, AB+'
             Platelets='B+, O+'
             Plasma='B-, B+, O-, O+'
+            typeStyle ='type-b-positive '
         />
     </>
 }

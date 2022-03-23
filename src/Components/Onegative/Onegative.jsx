@@ -13,6 +13,7 @@ export default function Onegative() {
         RedCells='Anyone'
         Platelets='O-, O+'
         Plasma='O-, O+'
+        typeStyle ='type-o-'
       />
       <div className="row">
         <div className="col-md-10">

@@ -12,6 +12,7 @@ export default function ABpositive() {
             RedCells='AB+'
             Platelets='AB+, A+, B+, O+'
             Plasma='Anyone'
+            typeStyle ='type-ab-positive'
         />
     </>
 }

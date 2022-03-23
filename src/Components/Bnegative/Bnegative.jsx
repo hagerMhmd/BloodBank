@@ -12,6 +12,7 @@ export default function Bnegative() {
             RedCells='B-, B+ AB-, AB+'
             Platelets='B-, B+, O-, O+'
             Plasma='B-, B+, O-, O+'
+            typeStyle ='type-b-'
         />
     </>
 }

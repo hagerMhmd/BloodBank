@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 
-export default function Onegative({ type, info, info2,  Percentage,  BloodTypes, RedCells, Platelets ,  Plasma}) {
+export default function Onegative({ typeStyle , type, info, info2,  Percentage,  BloodTypes, RedCells, Platelets ,  Plasma}) {
     return <>
         <section id='typeOpositive' className='pt-5'>
             <div className="container pt-5 pb-3">
                 <h1 className='text-center pt-5'>How To Target Type® {type}</h1>
                 <div className="row pt-4">
                     <div className="col-md-1">
-                        <h2 className='p-2 bg-danger text-white text-center'>{type}</h2>
+                        <h2 className={`${typeStyle} p-2 text-white text-center`}>{type}</h2>
                     </div>
                     <div className="col-md-10">
                         <p>{info} </p>

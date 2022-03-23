@@ -12,6 +12,7 @@ export default function Apositive() {
             RedCells='A+, AB+'
             Platelets='A+, O+'
             Plasma='O-, O+'
+            typeStyle ='type-a-positive'
         />
     </>
 }
