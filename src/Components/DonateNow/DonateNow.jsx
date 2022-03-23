@@ -17,7 +17,7 @@ export default function DonateNow() {
                                     <label className='fw-bold' htmlFor="selectArea">Blood Group</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <select className='form-select w-75' name="bloodGroup" id="selectArea">
+                                    <select className='form-select' name="bloodGroup" id="selectArea">
                                         <option value="O-">O-</option>
                                         <option value="O+">O+</option>
                                         <option value="A-">A-</option>
