@@ -18,7 +18,8 @@ import Onegative from './Components/Onegative/Onegative';
 import Opositive from './Components/Opositive/Opositive';
 import SupportUs from './Components/SupportUs/SupportUs';
 import Testimonials from './Components/Testimonials/Testimonials';
-import ABpositive from './Components/ABPositve/ABpositive';
+import ABpositive from './Components/ABpositive/ABpositive';
+import BloodRequest from './Components/BloodReuest/BloodRequest';
 
 function App() {
   return <>
@@ -41,6 +42,7 @@ function App() {
       <Route path='/abnegative' element={ <ABnegative/> } />
       <Route path='/abpositive' element={ <ABpositive/> } />
       <Route path='/donatenow' element={<DonateNow/>} />
+      <Route path='/bloodrequest' element={<BloodRequest/>} />
       <Route path='*' element={<h1>404</h1>} />
     </Routes>
     <Footer />
