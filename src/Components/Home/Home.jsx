@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import style from './Home.module.css'
 import { Link } from 'react-router-dom';
 import DonateBox from '../DonateBox/DonateBox';
+import SuportUs from '../SupportUs/SupportUs';
+
 
 export default function Home() {
 
@@ -44,5 +46,6 @@ export default function Home() {
       </Slider>
     </div>
     <DonateBox/>
+    <SuportUs/>
   </>
 }

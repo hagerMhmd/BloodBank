@@ -6,8 +6,9 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import LastesNews from './Components/LastesNews/LastesNews';
 import NavBar from './Components/NavBar/NavBar';
-import SupportUs from './Components/SupportUs/SupportUs';
+import SuportUs from './Components/SupportUs/SupportUs';
 import Testimonials from './Components/Testimonials/Testimonials';
+
 
 function App() {
   return <>
@@ -16,7 +17,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />
       <Route path='/about' element={<About />} />
-      <Route path='/supportus' element={<SupportUs />} />
+      <Route path='/supportus' element={<SuportUs />} />
       <Route path='/lastesnews' element={<LastesNews />} />
       <Route path='/testimonials' element={<Testimonials />} />
       <Route path='*' element={<h1>404</h1>} />
