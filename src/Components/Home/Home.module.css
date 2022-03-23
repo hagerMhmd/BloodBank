@@ -1,10 +1,6 @@
-/* .wdt{  
-    width: 100%  !important; 
-     background-color: tomato !important; 
-}   */
 .bg {
 	height: 100vh !important;
-	background-image: url(../../Imgs/Coachella-Slider.png);
+	background-image: url(../../Imgs/homepage.jpg);
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	background-size: cover;

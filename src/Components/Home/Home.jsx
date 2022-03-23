@@ -23,7 +23,7 @@ export default function Home() {
   return <>
     <div className='overflow-hidden'>
       <Slider {...settings} >
-        <div className={`${style.bg} px-lg-5 d-flex align-items-center px-4`}>
+        <div className={`${style.bg2} px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
             <h2 className="py-2">You could win a VIP</h2>
             <h1 className={`${style.font} py-2`}>Coachella Experience!</h1>
@@ -32,7 +32,7 @@ export default function Home() {
             <Link className='btn text-dark btn-light my-3 rounded-pill px-4 py-2' to='/about'>Learn More</Link>
           </div>
         </div>
-        <div className={`${style.bg2} py-5 px-lg-5 d-flex align-items-center px-4`}>
+        <div className={`${style.bg} py-5 px-lg-5 d-flex align-items-center px-4`}>
           <div className={`text-white `} >
             <h2 className="py-2">Critical Blood Shortage</h2>
             <h1 className={`${style.font} py-2`}>You Are Needed!</h1>
