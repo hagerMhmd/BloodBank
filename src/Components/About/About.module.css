@@ -1,0 +1,25 @@
+
+.about
+{
+    background-image: url(/src/Imgs/life.jpg);
+    background-size: cover;
+}
+
+ .h2About{
+    background-color: aqua;
+}
+
+.bttn{
+    background-color: #D6383C;
+    border-radius: 46px;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+}
+
+.h2_item , p{
+    color: #5B6065;
+}
+.p{
+    line-height: 1.8;
+}

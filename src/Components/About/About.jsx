@@ -1,7 +1,31 @@
 import React from 'react'
-
+import style from './About.module.css'
+import people from './../../Imgs/people.png'
 export default function About() {
   return <>
-    <h1 className='py-5 my-5'>About</h1>
+  <div className={`${style.about}`}>
+  <div className="container ">
+    <div className="row ">
+      <div className="col-md-6 py-5">
+        <div className="item1 pt-3">
+        <h2 className={`${style.h2_item} mb-4`}>Who Are You</h2>
+        <p className={`${style.p}`}>LifeStream has served the Inland Empire and surrounding areas since 1951 providing
+        lifesaving blood products and services to more than 80 Southern California hospitals
+        and medical facilities. As a non-profit organization, LifeStream relies upon the
+        generosity of more than 500 blood donations daily.</p>
+        <button className={`${style.bttn}`}>Read More</button>
+        </div>
+        <div className="item2 pt-5">
+        <h2 className={`${style.h2_item} mb-4`}>Schedule Your Appointment</h2>
+        <p>Giving the gift of life through blood donation is easy!</p>
+        <button className={`${style.bttn}`}>Donate Blood</button>
+        </div>
+      </div>
+      <div className="col-md-6">
+        <img src={people} className='w-100' alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+  </div>
   </>
 }
