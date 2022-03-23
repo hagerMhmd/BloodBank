@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function BloodRequest() {
+    const [values, setValues] = useState([])
+
+
+
+    function getDonateInfo(e) {
+        let myValue = { ...values }
+        myValue[e.target.name] = e.target.value
+        setValues(myValue)
+        console.log(myValue);
+        console.log(values);
+    }
+
+    useEffect(() => {
+        setValues()
+    }, [])
+    useEffect(() => {
+    }, [values])
 
 
     return <>
@@ -15,7 +32,7 @@ export default function BloodRequest() {
                                     <label className='fw-bold' htmlFor="patientAge">Patient Age</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="number" id='patientAge' className='form-control' />
+                                    <input onChange={getDonateInfo} type="number" id='patientAge' name='patientAge' className='form-control' />
                                 </div>
                             </div>
                             <div className="row ps-md-5 my-3 align-items-center">
@@ -23,7 +40,7 @@ export default function BloodRequest() {
                                     <label className='fw-bold' htmlFor="reason">Reason</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" id='reason' className='form-control' placeholder='' />
+                                    <input onChange={getDonateInfo} type="text" id='reason' name='reason' className='form-control' placeholder='' />
                                 </div>
                             </div>
                             <div className="row ps-md-5 my-3 align-items-center">
@@ -31,7 +48,7 @@ export default function BloodRequest() {
                                     <label className='fw-bold' htmlFor="requestSelectArea">Patient Name</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <select className='form-select' name="bloodGroup" id="requestSelectArea">
+                                    <select onChange={getDonateInfo} className='form-select' name="bloodGroup" id="requestSelectArea">
                                         <option value="O-">O-</option>
                                         <option value="O+">O+</option>
                                         <option value="A-">A-</option>
@@ -48,7 +65,7 @@ export default function BloodRequest() {
                                     <label className='fw-bold' htmlFor="unit">Unit (in ml)</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="number" id='unit' className='form-control' placeholder='' />
+                                    <input onChange={getDonateInfo} type="number" name='unit' id='unit' className='form-control' placeholder='' />
                                 </div>
                             </div>
                             <div className="row ps-md-5">
