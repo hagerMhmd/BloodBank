@@ -2,14 +2,8 @@
 import React, { useEffect, useState } from 'react'
 
 export default function DonateNow() {
-    const [values, setValues] = useState([
-        {
-            type: '',
-            unit: '',
-            disease: '',
-            age: ''
-        },
-    ])
+    const [values, setValues] = useState([])
+
     function getDonateInfo(e) {
         let myValue = { ...values }
         myValue[e.target.name] = e.target.value
@@ -17,6 +11,7 @@ export default function DonateNow() {
         console.log(myValue);
         console.log(values);
     }
+
     useEffect(() => {
         setValues()
     }, [])
