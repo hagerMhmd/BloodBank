@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 
-export default function Onegative({ title, type, info, info2, liTitle, li0, li1, li2, li3, tableTitle, td0right, td0left, td1right, td1left, td2right, td2left, td3right, td3left , td4right , td4left}) {
+export default function Onegative({ type, info, info2,  Percentage,  BloodTypes, RedCells, Platelets ,  Plasma}) {
     return <>
-        <section id='typeOpositive' className='py-5'>
-            <div className="container py-5">
-                <h1 className='text-center pt-5'>{title}</h1>
+        <section id='typeOpositive' className='pt-5'>
+            <div className="container pt-5 pb-3">
+                <h1 className='text-center pt-5'>How To Target Type® {type}</h1>
                 <div className="row pt-4">
                     <div className="col-md-1">
                         <h2 className='p-2 bg-danger text-white text-center'>{type}</h2>
@@ -15,40 +15,33 @@ export default function Onegative({ title, type, info, info2, liTitle, li0, li1,
                         <p>{info2}</p>
                     </div>
                     <div className="col-md-10">
-                        <h3 className='h2Color py-3'>{liTitle}</h3>
-                        <ul>
-                            <li>{li0}</li>
-                            <li>{li1}</li>
-                            <li>{li2}</li>
-                            <li>{li3}</li>
-                        </ul>
-                        <h3 className='h2Color py-3'>{tableTitle}</h3>
+                        <h3 className='h2Color pt-3'>The Power of {type}</h3>
                         <table class="table table-striped table-hover">
                             <tbody>
                                 <tr>
-                                    <td>{td0right}</td>
+                                    <td>Percentage of Population:</td>
                                     <td></td>
-                                    <td>{td0left}</td>
+                                    <td>{Percentage}</td>
                                 </tr>
                                 <tr>
-                                    <td>{td1right}</td>
+                                    <td>Blood Types you Can Receive:</td>
                                     <td></td>
-                                    <td>{td1left}</td>
+                                    <td>{BloodTypes}</td>
                                 </tr>
                                 <tr>
-                                    <td>{td2right}</td>
+                                    <td>Patients Who Can Receive Your Red Cells:</td>
                                     <td></td>
-                                    <td>{td2left}</td>
+                                    <td>{RedCells}</td>
                                 </tr>
                                 <tr>
-                                    <td>{td3right}</td>
+                                    <td>Patients Who Can Receive Your Platelets:</td>
                                     <td></td>
-                                    <td>{td3left}</td>
+                                    <td>{Platelets}</td>
                                 </tr>
                                 <tr>
-                                    <td>{td4right}</td>
+                                    <td>Patients Who Can Receive Your Plasma:</td>
                                     <td></td>
-                                    <td>{td4left}</td>
+                                    <td>{Plasma}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -58,3 +51,11 @@ export default function Onegative({ title, type, info, info2, liTitle, li0, li1,
         </section>
     </>
 }
+// td1right='Blood Types you Can Receive:'
+// td1left='A-, O-'
+// td2right='Patients Who Can Receive Your Red Cells:'
+// td2left='Anyone'
+// td3right='Patients Who Can Receive Your Platelets:'
+// td3left='O-, O+'
+// td4right='Patients Who Can Receive Your Plasma:'
+// td4left='O-, O+'
