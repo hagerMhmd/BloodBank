@@ -12,7 +12,12 @@
 	background-position: 100% 100%;
 	background-size: cover;
 }
-.font{
-    font-size: 4rem !important;
-    font-weight: bolder;
+.font {
+	font-size: 4rem !important;
+	font-weight: bolder;
+}
+@media screen and (max-width: 992px) {
+	.font {
+		font-size: 3rem !important;
+	}
 }
