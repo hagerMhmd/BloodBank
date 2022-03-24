@@ -50,8 +50,23 @@
 	height: 1px;
 	text-align: center !important;
 }
-/* O Negative type */
+/* -------------------------------------------- O Negative type */
 .h2Color {
 	color: #ab192d;
 }
-/*  */
+/* -------------------------------------------- donateBox */
+@media screen and (max-width: 768px) {
+	.donateBox .container {
+		width: 100% !important;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 992px)  {
+	.donateBox .container {
+		width: 90% !important;
+	}
+}
+@media screen and (min-width: 993px) (max-width: 1200px) {
+	.donateBox .container {
+		width: 80% !important;
+	}
+}

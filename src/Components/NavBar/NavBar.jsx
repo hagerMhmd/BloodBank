@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../Imgs/blood bank-2-01.png'

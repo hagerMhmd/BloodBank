@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function Onegative({ typeStyle, type, info, info2, Percentage, BloodTypes, RedCells, Platelets, Plasma }) {
     return <>
@@ -9,7 +8,7 @@ export default function Onegative({ typeStyle, type, info, info2, Percentage, Bl
                 <div className="shadow pt-5 rounded-3 px-md-5 px-3">
                     <h1 className='text-center'>How To Target Type® {type}</h1>
                     <div className="row pt-4">
-                        <div className="col-lg-1 col-md-2">
+                        <div className="col-xl-1 col-md-2">
                             <h2 className={`${typeStyle} p-2 text-white text-center`}>{type}</h2>
                         </div>
                         <div className="col-md-10">
@@ -50,16 +49,7 @@ export default function Onegative({ typeStyle, type, info, info2, Percentage, Bl
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </>
 }
-// td1right='Blood Types you Can Receive:'
-// td1left='A-, O-'
-// td2right='Patients Who Can Receive Your Red Cells:'
-// td2left='Anyone'
-// td3right='Patients Who Can Receive Your Platelets:'
-// td3left='O-, O+'
-// td4right='Patients Who Can Receive Your Plasma:'
-// td4left='O-, O+'
