@@ -16,6 +16,7 @@ import Onegative from './Components/Onegative/Onegative';
 import Opositive from './Components/Opositive/Opositive';
 import ABpositive from './Components/ABpositive/ABpositive';
 import BloodRequest from './Components/BloodReuest/BloodRequest';
+import About from './Components/About/About';
 
 function App() {
     return <>
@@ -23,6 +24,7 @@ function App() {
         < Routes >
             <Route path='/' element={< Home />} />
             <Route path='/home' element={< Home />} />
+            <Route path='/about' element={<About/>} />
             <Route path='/bloodInfo' element={< BloodInfo />} />
             <Route path='/bloodtype' element={< BloodType />} />
             <Route path='/onegative' element={< Onegative />} />

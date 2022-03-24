@@ -23,10 +23,10 @@ export default function NavBar() {
                             <Link className="nav-link active fs-6" aria-current="page" to='/about'>About Donating</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fs-6" aria-current="page" to='/supportus'>Donate Blood</Link>
+                            <Link className="nav-link active fs-6" aria-current="page" to='/donatenow'>Donate Blood</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fs-6" aria-current="page" to='/home'>Host a Blood Drive</Link>
+                            <Link className="nav-link active fs-6" aria-current="page" to='/bloodrequest'>Host a Blood Drive</Link>
                         </li>
                     </ul>
                 </div>
