@@ -8,6 +8,7 @@ import DonateBox from '../DonateBox/DonateBox';
 import About from '../About/About';
 import Testimonials from '../Testimonials/Testimonials'
 import LastesNews from '../LastesNews/LastesNews'
+import Details from '../Details/Details';
 
 export default function Home() {
   let settings = {
@@ -43,6 +44,7 @@ export default function Home() {
     </div>
     <DonateBox />
     <About />
+    <Details/>
     <LastesNews />
     <Testimonials />
   </>
