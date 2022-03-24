@@ -16,7 +16,7 @@ export default function Onegative({ typeStyle , type, info, info2,  Percentage, 
                     </div>
                     <div className="col-md-10">
                         <h3 className='h2Color pt-3'>The Power of {type}</h3>
-                        <table class="table table-striped table-hover">
+                        <table className="table table-striped table-hover">
                             <tbody>
                                 <tr>
                                     <td>Percentage of Population:</td>

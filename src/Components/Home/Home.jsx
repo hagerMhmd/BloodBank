@@ -10,9 +10,10 @@ import style from './Home.module.css'
 import { Link } from 'react-router-dom';
 import DonateBox from '../DonateBox/DonateBox';
 import About from '../About/About';
+import Testimonials from '../Testimonials/Testimonials'
+import LastesNews from '../LastesNews/LastesNews'
 
 export default function Home() {
-
   let settings = {
     dots: true,
     infinite: true,
@@ -44,7 +45,9 @@ export default function Home() {
         </div>
       </Slider>
     </div>
-    <DonateBox/>
-    <About/>
+    <DonateBox />
+    <About />
+    <LastesNews />
+    <Testimonials />
   </>
 }
