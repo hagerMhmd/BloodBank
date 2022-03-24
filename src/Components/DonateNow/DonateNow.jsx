@@ -4,25 +4,28 @@ import React, { useEffect, useState } from 'react'
 let values = []
 
 export default function DonateNow() {
-
+    // ---------------------------------------------------- All Error Messages Variables
     const [invalidAge, setInvalidAge] = useState('')
     const [invalidweigh, setInvalidweigh] = useState('')
+    const [inputsReq, setInputsReq] = useState('')
 
+    // ---------------------------------------------------- On Change
     function getDonateInfo(e) {
         let myValue = { ...values }
         myValue[e.target.name] = e.target.value
         values = myValue
-        // console.log(myValue);
-        // console.log(values);
     }
+    // -------------------------------------------------- Check Values 
     function isEmpty() {
-        if (values.bloodGroup === undefined || values.disease === undefined || values.unit === undefined || values.age === undefined || values.weigh === undefined) {
+        if (values.bloodGroup === undefined || values.unit === undefined || values.age === undefined || values.weigh === undefined) {
             console.log('fady');
+            setInputsReq(<span className="mb-2 d-block text-danger">All inputs required</span>)
         } else {
             console.log('done');
+            setInputsReq('')
         }
-
     }
+    //--------------------------------------------------- Validate Age
     function validateAge() {
         if (+values.age < 18 || +values.age > 75) {
             setInvalidAge(<span className="mb-2 d-block text-danger">Age Must be between 18 and 75 years</span>)
@@ -32,6 +35,7 @@ export default function DonateNow() {
             return
         }
     }
+    // ---------------------------------------------- Validate Weigh
     function validateWeigh() {
         if (+values.weigh < 50) {
             setInvalidweigh(<span className="mb-2 d-block text-danger">Weigh Must be greater or equal 50kg.</span>)
@@ -41,7 +45,7 @@ export default function DonateNow() {
             return
         }
     }
-
+    //------------------------------------------------- On Submit
     function submit(e) {
         e.preventDefault()
         validateAge()
@@ -119,6 +123,9 @@ export default function DonateNow() {
                             <div className="row gx-0 ps-lg-5">
                                 <div className="col-md-3">
                                     <button className='btn btn-danger'>Donate</button>
+                                </div>
+                                <div className="col-md-6 ">
+                                    <div >{inputsReq}</div>
                                 </div>
                             </div>
 
