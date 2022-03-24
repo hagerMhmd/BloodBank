@@ -1,11 +1,7 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
-import coachella from '../../Imgs/Coachella-Slider.png'
-import blood from '../../Imgs/Website-Sliders-2021-7.png'
+import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-// import './slickdemo.css';  
 import style from './Home.module.css'
 import { Link } from 'react-router-dom';
 import DonateBox from '../DonateBox/DonateBox';
