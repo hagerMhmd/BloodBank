@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Playfair+Display:wght@600&display=swap');
+.textwidget{
+    font-size: 120px !important;
+    letter-spacing: -5px !important;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 2px 25px rgb(0 0 0 / 15%) !important;
+    color: white;
+}
+.bg{
+    background-image: url(../../Imgs/bg-d.jpg);
+    background-size: cover;
+    height: 100vh;
+}

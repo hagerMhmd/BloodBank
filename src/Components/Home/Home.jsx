@@ -9,6 +9,8 @@ import About from '../About/About';
 import Testimonials from '../Testimonials/Testimonials'
 import LastesNews from '../LastesNews/LastesNews'
 import Details from '../Details/Details';
+import SuportUs from '../SupportUs/SupportUs';
+
 
 export default function Home() {
   let settings = {
@@ -47,5 +49,7 @@ export default function Home() {
     <Details/>
     <LastesNews />
     <Testimonials />
+    <DonateBox/>
+    <SuportUs/>
   </>
 }
