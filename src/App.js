@@ -18,6 +18,7 @@ import ABpositive from './Components/ABpositive/ABpositive';
 import BloodRequest from './Components/BloodReuest/BloodRequest';
 import About from './Components/About/About';
 import Countonme from './Components/Countonme/Countonme';
+import Donors from './Components/Donors/Donors';
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <Route path='/donatenow' element={< DonateNow />} />
             <Route path='/countonme' element={<Countonme/>} />
             <Route path='/bloodrequest' element={< BloodRequest />} />
+            <Route path='/donors' element={<Donors/>} />
             <Route path='*' element={<h1>404</h1>} />
         </Routes>
         <Footer />

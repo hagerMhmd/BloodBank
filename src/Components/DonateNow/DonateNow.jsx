@@ -1,58 +1,65 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-let values = []
+export let values = []
 
 export default function DonateNow() {
+    const navigate = useNavigate()
     // ---------------------------------------------------- All Error Messages Variables
+    
     const [invalidAge, setInvalidAge] = useState('')
     const [invalidweigh, setInvalidweigh] = useState('')
     const [inputsReq, setInputsReq] = useState('')
-
     // ---------------------------------------------------- On Change
     function getDonateInfo(e) {
-        let myValue = { ...values }
+        let myValue = []
         myValue[e.target.name] = e.target.value
         values = myValue
     }
     // -------------------------------------------------- Check Values 
     function isEmpty() {
         if (values.bloodGroup === undefined || values.unit === undefined || values.age === undefined || values.weigh === undefined) {
-            console.log('fady');
             setInputsReq(<span className="mb-2 d-block text-danger">All inputs required</span>)
         } else {
-            console.log('done');
             setInputsReq('')
+            return true
         }
     }
     //--------------------------------------------------- Validate Age
     function validateAge() {
         if (+values.age < 18 || +values.age > 75) {
             setInvalidAge(<span className="mb-2 d-block text-danger">Age Must be between 18 and 75 years</span>)
-            return
+            return 
         } else {
             setInvalidAge('')
-            return
+            return true
         }
     }
     // ---------------------------------------------- Validate Weigh
     function validateWeigh() {
         if (+values.weigh < 50) {
             setInvalidweigh(<span className="mb-2 d-block text-danger">Weigh Must be greater or equal 50kg.</span>)
-            return
+            return 
         } else {
             setInvalidweigh('')
-            return
+            return true
         }
     }
     //------------------------------------------------- On Submit
     function submit(e) {
         e.preventDefault()
-        validateAge()
-        validateWeigh()
-        isEmpty()
+        if (validateAge() !== true) {
+            return
+        }
+        if(validateWeigh() !== true){
+            return
+        }
+        if(isEmpty() !== true){
+            return
+        }
+        navigate('/donors')
     }
-
     return <>
         <section className='donateBox py-5 mt-4' >
             <div className="container w-50 pb-5 mt-5">
@@ -94,7 +101,6 @@ export default function DonateNow() {
                                     <input onChange={getDonateInfo} type="text" id='disease' name='disease' className='form-control' placeholder='' />
                                 </div>
                             </div>
-
                             <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="age">Age</label>
@@ -106,8 +112,6 @@ export default function DonateNow() {
                                     <div className="pt-3">{invalidAge}</div>
                                 </div>
                             </div>
-
-
                             <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="Weigh">Weigh </label>
@@ -119,7 +123,6 @@ export default function DonateNow() {
                                     <div className="pt-3">{invalidweigh}</div>
                                 </div>
                             </div>
-
                             <div className="row gx-0 ps-lg-5">
                                 <div className="col-md-3">
                                     <button className='btn btn-danger'>Donate</button>
@@ -128,7 +131,6 @@ export default function DonateNow() {
                                     <div >{inputsReq}</div>
                                 </div>
                             </div>
-
                         </div>
                     </form>
                 </div>
@@ -136,37 +138,3 @@ export default function DonateNow() {
         </section>
     </>
 }
-
-
-
-// const [locationSatate, setLocationSatate] = useState(null)
-// function successCallback(loc) {
-//     console.log(loc);
-//     setLocationSatate('successfully get locaiton')
-// }
-// function errorCallback(err) {
-//     console.log(err);
-//     setLocationSatate('error')
-// }
-// function getLocation() {
-//     navigator.geolocation.getCurrentPosition(successCallback, errorCallback)
-// }
-
-// {/* <h2 className='h2Color text-center pt-5'>Find A Blood Drive or Donor Center</h2>
-// <h5 className='h2Color text-center '>Be a part of the 10% that donate blood</h5>
-// <button onClick={getLocation} className='btn btn-outline-primary'>Find You Location</button>
-// <span className='text-danger alert'>{locationSatate}</span> */}
-
-
-
- // function messageRequired() {
-    //     requiredMessage.dangerouslySetInnerHTML ={ __html: `<span className="mb-2 d-block text-danger">Age Must be grater than or equal 18</span>` }
-    // }
-
-    // function createMarkup() {
-    //     return { __html: '' };
-    // }
-
-    // function MyComponent() {
-    //     return <div dangerouslySetInnerHTML={createMarkup()} />;
-    // }

@@ -27,6 +27,9 @@ export default function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link active fs-6" aria-current="page" to='/bloodrequest'>Host a Blood Drive</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active fs-6" aria-current="page" to='/donors'>Donors</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
