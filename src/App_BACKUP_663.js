@@ -14,12 +14,16 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import LastesNews from './Components/LastesNews/LastesNews';
 import NavBar from './Components/NavBar/NavBar';
+<<<<<<< HEAD
+import SuportUs from './Components/SupportUs/SupportUs';
+=======
 import Onegative from './Components/Onegative/Onegative';
 import Opositive from './Components/Opositive/Opositive';
+import SupportUs from './Components/SupportUs/SupportUs';
+>>>>>>> 8350f51e992d7ea522d414eb67dba63351ef37e4
 import Testimonials from './Components/Testimonials/Testimonials';
 import ABpositive from './Components/ABpositive/ABpositive';
 import BloodRequest from './Components/BloodReuest/BloodRequest';
-import Supportbox from "./Components/Supportbox/Supportbox";
 
 
 function App() {
@@ -28,6 +32,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/supportus' element={<SuportUs />} />
       <Route path='/lastesnews' element={<LastesNews />} />
       <Route path='/testimonials' element={<Testimonials />} />
       <Route path='/bloodInfo' element={<BloodInfo/>} />
@@ -41,7 +47,6 @@ function App() {
       <Route path='/abnegative' element={ <ABnegative/> } />
       <Route path='/abpositive' element={ <ABpositive/> } />
       <Route path='/donatenow' element={<DonateNow/>} />
-      <Route path="supportbox" element={<Supportbox />} />
       <Route path='/bloodrequest' element={<BloodRequest/>} />
       <Route path='*' element={<h1>404</h1>} />
     </Routes>

@@ -10,6 +10,8 @@ import style from './Home.module.css'
 import { Link } from 'react-router-dom';
 import DonateBox from '../DonateBox/DonateBox';
 import About from '../About/About';
+import SuportUs from '../SupportUs/SupportUs';
+
 
 export default function Home() {
 
@@ -46,5 +48,6 @@ export default function Home() {
     </div>
     <DonateBox/>
     <About/>
+    <SuportUs/>
   </>
 }
