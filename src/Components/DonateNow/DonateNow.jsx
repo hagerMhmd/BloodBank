@@ -18,10 +18,6 @@ export default function DonateNow() {
         let myValue = {...values}
         myValue[e.target.name] = e.target.value
         values = myValue
-        // setValues(myValue)
-        // let myValue = [e.target.name]
-        // myValue = e.target.value
-        // values = myValue
         console.log(values);
     }
     // -------------------------------------------------- Check Values 
@@ -30,7 +26,7 @@ export default function DonateNow() {
             setInputsReq(<span className="mb-2 d-block text-danger">All inputs required</span>)
         } else {
             setInputsReq('')
-            return true
+            return true 
         }
     }
     //--------------------------------------------------- Validate Age
