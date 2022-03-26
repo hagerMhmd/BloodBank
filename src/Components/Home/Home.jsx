@@ -47,10 +47,8 @@ export default function Home() {
     <DonateBox />
     <About />
     <Details/>
+    <SuportUs/>
     <LastesNews />
     <Testimonials />
-    <DonateBox/>
-    <About/>
-    <SuportUs/>
   </>
 }
