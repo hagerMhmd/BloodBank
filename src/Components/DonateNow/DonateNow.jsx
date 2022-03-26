@@ -7,15 +7,22 @@ export let values = []
 export default function DonateNow() {
     const navigate = useNavigate()
     // ---------------------------------------------------- All Error Messages Variables
-    
+
     const [invalidAge, setInvalidAge] = useState('')
     const [invalidweigh, setInvalidweigh] = useState('')
     const [inputsReq, setInputsReq] = useState('')
+    // const [values, setValues] = useState([])
+
     // ---------------------------------------------------- On Change
     function getDonateInfo(e) {
-        let myValue = []
+        let myValue = {...values}
         myValue[e.target.name] = e.target.value
         values = myValue
+        // setValues(myValue)
+        // let myValue = [e.target.name]
+        // myValue = e.target.value
+        // values = myValue
+        console.log(values);
     }
     // -------------------------------------------------- Check Values 
     function isEmpty() {
@@ -30,7 +37,7 @@ export default function DonateNow() {
     function validateAge() {
         if (+values.age < 18 || +values.age > 75) {
             setInvalidAge(<span className="mb-2 d-block text-danger">Age Must be between 18 and 75 years</span>)
-            return 
+            return
         } else {
             setInvalidAge('')
             return true
@@ -40,7 +47,7 @@ export default function DonateNow() {
     function validateWeigh() {
         if (+values.weigh < 50) {
             setInvalidweigh(<span className="mb-2 d-block text-danger">Weigh Must be greater or equal 50kg.</span>)
-            return 
+            return
         } else {
             setInvalidweigh('')
             return true
@@ -52,13 +59,14 @@ export default function DonateNow() {
         if (validateAge() !== true) {
             return
         }
-        if(validateWeigh() !== true){
+        if (validateWeigh() !== true) {
             return
         }
-        if(isEmpty() !== true){
+        if (isEmpty() !== true) {
             return
         }
         navigate('/donors')
+        // localStorage.setItem('donors', JSON.stringify(values))
     }
     return <>
         <section className='donateBox py-5 mt-4' >

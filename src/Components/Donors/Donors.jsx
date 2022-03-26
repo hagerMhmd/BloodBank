@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
-import { values } from '../DonateNow/DonateNow'
+// import { values } from '../DonateNow/DonateNow'
 
 export default function Donors() {
 
-    console.log(values);
+    // console.log(values);
     const [donorDetails, setDonorDetails] = useState([
         {
             bloodGroup: 'A+',

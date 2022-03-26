@@ -11,7 +11,7 @@ export default function Supportbox() {
       <div className="row">
     <div className="col-9">
       <Link className={`${style.linkdecoration} mx-1`}  to="/home">Home</Link>
-      <i class="fa-duotone fa-angles-right"></i>
+      <i className="fa-duotone fa-angles-right"></i>
       <span className={`${style.color} mx-1`} >WAYS TO SUPPORT US</span>
       <div className="">
         <h1>Ways To Support Us</h1>

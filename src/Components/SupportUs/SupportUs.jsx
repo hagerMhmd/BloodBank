@@ -22,7 +22,7 @@ export default function SuportUs() {
                 alternative ways you can support our mission to help save lives.
               </p>
               <Link
-                to="supportbox"
+                to="/supportbox"
                 className="btn btn-light rounded-pill px-5 btn-lg "
               >
               learn more

@@ -19,7 +19,8 @@ import BloodRequest from './Components/BloodReuest/BloodRequest';
 import About from './Components/About/About';
 import Countonme from './Components/Countonme/Countonme';
 import Donors from './Components/Donors/Donors';
-
+import Testimonials from './Components/Testimonials/Testimonials';
+import Supportbox from "./Components/Supportbox/Supportbox";
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
         < Routes >
             <Route path='/' element={< Home />} />
             <Route path='/home' element={< Home />} />
-            <Route path='/about' element={<About/>} />
+            <Route path='/about' element={<About />} />
+            <Route path='/testimonials' element={<Testimonials />} />
             <Route path='/bloodInfo' element={< BloodInfo />} />
             <Route path='/bloodtype' element={< BloodType />} />
             <Route path='/onegative' element={< Onegative />} />
@@ -40,9 +42,11 @@ function App() {
             <Route path='/abnegative' element={< ABnegative />} />
             <Route path='/abpositive' element={< ABpositive />} />
             <Route path='/donatenow' element={< DonateNow />} />
-            <Route path='/countonme' element={<Countonme/>} />
+            <Route path='/countonme' element={<Countonme />} />
+            <Route path="supportbox" element={<Supportbox />} />
+            <Route path='/bloodrequest' element={<BloodRequest />} />
             <Route path='/bloodrequest' element={< BloodRequest />} />
-            <Route path='/donors' element={<Donors/>} />
+            <Route path='/donors' element={<Donors />} />
             <Route path='*' element={<h1>404</h1>} />
         </Routes>
         <Footer />
