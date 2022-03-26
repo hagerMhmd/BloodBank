@@ -6,12 +6,9 @@ import style from './Home.module.css'
 import { Link } from 'react-router-dom';
 import DonateBox from '../DonateBox/DonateBox';
 import About from '../About/About';
-<<<<<<< HEAD
 import Testimonials from '../Testimonials/Testimonials'
 import LastesNews from '../LastesNews/LastesNews'
 import Details from '../Details/Details';
-=======
->>>>>>> 435ef54aba71f351cccc0340fb44db22d51ffd96
 import SuportUs from '../SupportUs/SupportUs';
 
 
@@ -53,10 +50,7 @@ export default function Home() {
     <LastesNews />
     <Testimonials />
     <DonateBox/>
-<<<<<<< HEAD
-=======
     <About/>
->>>>>>> 435ef54aba71f351cccc0340fb44db22d51ffd96
     <SuportUs/>
   </>
 }
