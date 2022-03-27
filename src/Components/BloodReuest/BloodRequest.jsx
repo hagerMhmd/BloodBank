@@ -18,14 +18,16 @@ export default function BloodRequest() {
     }, [])
     useEffect(() => {
     }, [values])
-
+    function submitRequest(e) {
+        e.preventDefault()
+    }
 
     return <>
-        <section className='py-5 mt-4'>
+        <section className='donateBox py-5 mt-4'>
             <div className="container w-50 pb-5 mt-5">
                 <div className="shadow rounded-3 pb-5">
                     <h2 className='text-center py-3 mb-4 text-white bg-dark'>MAKE DONATE REQUEST</h2>
-                    <form>
+                    <form onSubmit={submitRequest}>
                         <div className="container pt-3">
                             <div className="row ps-md-5 my-3 align-items-center">
                                 <div className="col-md-3">

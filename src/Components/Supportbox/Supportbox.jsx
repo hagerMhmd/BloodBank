@@ -23,7 +23,6 @@ export default function Supportbox() {
     </div>
     <div className="col-3" ></div>
   </div>
-
 </div>
 </div>
 }

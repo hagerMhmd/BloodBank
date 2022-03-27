@@ -1,36 +1,79 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
+export let values = []
 
 export default function DonateNow() {
-    const [values, setValues] = useState([])
-
+    const navigate = useNavigate()
+    // ---------------------------------------------------- All Error Messages Variables
+    
+    const [invalidAge, setInvalidAge] = useState('')
+    const [invalidweigh, setInvalidweigh] = useState('')
+    const [inputsReq, setInputsReq] = useState('')
+    // ---------------------------------------------------- On Change
     function getDonateInfo(e) {
-        let myValue = { ...values }
+        let myValue = []
         myValue[e.target.name] = e.target.value
-        setValues(myValue)
-        console.log(myValue);
-        console.log(values);
+        values = myValue
     }
-
-    useEffect(() => {
-        setValues()
-    }, [])
-    useEffect(() => {
-    }, [values])
-
+    // -------------------------------------------------- Check Values 
+    function isEmpty() {
+        if (values.bloodGroup === undefined || values.unit === undefined || values.age === undefined || values.weigh === undefined) {
+            setInputsReq(<span className="mb-2 d-block text-danger">All inputs required</span>)
+        } else {
+            setInputsReq('')
+            return true
+        }
+    }
+    //--------------------------------------------------- Validate Age
+    function validateAge() {
+        if (+values.age < 18 || +values.age > 75) {
+            setInvalidAge(<span className="mb-2 d-block text-danger">Age Must be between 18 and 75 years</span>)
+            return 
+        } else {
+            setInvalidAge('')
+            return true
+        }
+    }
+    // ---------------------------------------------- Validate Weigh
+    function validateWeigh() {
+        if (+values.weigh < 50) {
+            setInvalidweigh(<span className="mb-2 d-block text-danger">Weigh Must be greater or equal 50kg.</span>)
+            return 
+        } else {
+            setInvalidweigh('')
+            return true
+        }
+    }
+    //------------------------------------------------- On Submit
+    function submit(e) {
+        e.preventDefault()
+        if (validateAge() !== true) {
+            return
+        }
+        if(validateWeigh() !== true){
+            return
+        }
+        if(isEmpty() !== true){
+            return
+        }
+        navigate('/donors')
+    }
     return <>
-        <section className='py-5 mt-4'>
+        <section className='donateBox py-5 mt-4' >
             <div className="container w-50 pb-5 mt-5">
                 <div className="shadow rounded-3 pb-5">
                     <h2 className='text-center py-3 mb-4 text-white bg-dark'>DONATE BLOOD</h2>
-                    <form>
+                    <form onSubmit={submit} >
                         <div className="container pt-3">
-                            <div className="row ps-md-5 my-3 align-items-center">
+                            <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="selectArea">Blood Group</label>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-8">
                                     <select onChange={getDonateInfo} className='form-select' name="bloodGroup" id="selectArea">
+                                        <option disabled >Choose your blood type</option>
                                         <option value="O-">O-</option>
                                         <option value="O+">O+</option>
                                         <option value="A-">A-</option>
@@ -42,33 +85,50 @@ export default function DonateNow() {
                                     </select>
                                 </div>
                             </div>
-                            <div className="row ps-md-5 my-3 align-items-center">
+                            <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="unit">Unit (in ml)</label>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-8">
                                     <input onChange={getDonateInfo} type="number" id='unit' name='unit' className='form-control' />
                                 </div>
                             </div>
-                            <div className="row ps-md-5 my-3 align-items-center">
+                            <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="disease">Disease (if any)</label>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-8">
                                     <input onChange={getDonateInfo} type="text" id='disease' name='disease' className='form-control' placeholder='' />
                                 </div>
                             </div>
-                            <div className="row ps-md-5 my-3 align-items-center">
+                            <div className="row gx-0 ps-lg-5 my-3 align-items-center">
                                 <div className="col-md-3">
                                     <label className='fw-bold' htmlFor="age">Age</label>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-8">
                                     <input onChange={getDonateInfo} type="number" id='age' name='age' className='form-control' placeholder='' />
                                 </div>
+                                <div className="col-md-6 offset-md-3">
+                                    <div className="pt-3">{invalidAge}</div>
+                                </div>
                             </div>
-                            <div className="row ps-md-5">
+                            <div className="row gx-0 ps-lg-5 my-3 align-items-center">
+                                <div className="col-md-3">
+                                    <label className='fw-bold' htmlFor="Weigh">Weigh </label>
+                                </div>
+                                <div className="col-md-8">
+                                    <input onChange={getDonateInfo} type="number" id='weigh' name='weigh' className='form-control' placeholder='' />
+                                </div>
+                                <div className="col-md-6 offset-md-3">
+                                    <div className="pt-3">{invalidweigh}</div>
+                                </div>
+                            </div>
+                            <div className="row gx-0 ps-lg-5">
                                 <div className="col-md-3">
                                     <button className='btn btn-danger'>Donate</button>
+                                </div>
+                                <div className="col-md-6 ">
+                                    <div >{inputsReq}</div>
                                 </div>
                             </div>
                         </div>
@@ -78,23 +138,3 @@ export default function DonateNow() {
         </section>
     </>
 }
-
-
-
-// const [locationSatate, setLocationSatate] = useState(null)
-// function successCallback(loc) {
-//     console.log(loc);
-//     setLocationSatate('successfully get locaiton')
-// }
-// function errorCallback(err) {
-//     console.log(err);
-//     setLocationSatate('error')
-// }
-// function getLocation() {
-//     navigator.geolocation.getCurrentPosition(successCallback, errorCallback)
-// }
-
-// {/* <h2 className='h2Color text-center pt-5'>Find A Blood Drive or Donor Center</h2>
-// <h5 className='h2Color text-center '>Be a part of the 10% that donate blood</h5>
-// <button onClick={getLocation} className='btn btn-outline-primary'>Find You Location</button>
-// <span className='text-danger alert'>{locationSatate}</span> */}
