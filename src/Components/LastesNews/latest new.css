@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.title-news{
+    color: #5b6065;
+    margin: 20px 0 30px;
+    font-family:Oswald ,sans-serif ;
+    font-size: 37px;
+}
+.im{
+height: 300px;
+}
+.late-rights{
+    color: white;
+    background-color: #D2044C;
+    padding: 30px 25px !important;
+    height: 300px;
+    position: relative;
+}
+.late-rights h3{
+font-size: 24px;
+font-family:Oswald ,sans-serif ;
+margin: 0px 0px 10px;
+cursor: pointer;
+transition: .5s all !important;
+}
+.late-rights h3:hover{
+    text-decoration: underline;
+}
+.late-rights h5{
+    font-size: 15px;
+    font-family:Oswald ,sans-serif ;
+margin: 0px 0px 10px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.late-rights p{
+    margin: 10px 0px;
+ color: white;
+    font: 13px Lato;
+}
+.late-rights h6{
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 16px Oswald ,sans-serif ;
+    transition: .5s all;
+    cursor: pointer;
+}
+.nes{
+    width: 120px;
+    height: 20px;
+}
+.late-rights .nes:hover{
+font-size: 14px;}
+.late-rights::before{
+    content: '';
+  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left:-25px;
+    width: 30; 
+  height: 30; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  z-index: 10;
+  border-right:25px solid #D2044C; 
+}
+.late-rights-btom{
+    color: #5b6065;
+    padding: 30px 25px !important;
+    height: 300px;
+    position: relative;
+}
+.late-rights-btom h3{
+    font-size: 24px;
+    font-family:Oswald ,sans-serif ;
+    margin: 0px 0px 10px;
+    cursor: pointer;
+    transition: .5s all !important;
+    }
+    .late-rights-btom h3:hover{
+        text-decoration: underline;
+    }
+    .late-rights-btom h5{
+        font-size: 15px;
+        font-family:Oswald ,sans-serif ;
+    margin: 0px 0px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+    .late-rights-btom p{
+        margin: 10px 0px;
+     color: #5b6065;
+        font: 13px Lato;
+    }
+    .late-rights-btom h6{
+        text-transform: uppercase;
+        font-weight: bold;
+        font: 16px Oswald ,sans-serif ;
+        transition: .5s all;
+        cursor: pointer;
+    }
+   
+    .late-rights-btom .nes:hover{
+    font-size: 14px;}
+    .late-rights-btom::before{
+        content: '';
+      
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        right:-25px;
+        width: 30; 
+      height: 30; 
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent; 
+      z-index: 10;
+      border-left:25px solid white; 
+    }
+    .no{
+        height: 100px;
+    }
+.lo{
+    position: relative;
+    cursor: pointer;
+}
+.lo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    
+    width: 55px;
+    height:5px;
+    background-color: #D2044C;
+    transition: .5s all;
+}
+.lo:hover::after{
+    background-color: white !important;
+}
+.so h4{
+    color: #5b6065;
+    font-size: 22px;
+    font-weight: 400;
+    font-family:Oswald ,sans-serif ;
+cursor: pointer;
+}
+.so h4:hover{
+    text-decoration: underline;
+}
+.so p{
+    color: #5b6065;
+    margin: 0px 0px 10px;
+    font: 13px Lato;
+}
+.so h6{
+    color: #5b6065;
+    margin: 0px 0px 25px;
+    font: 13px Lato;
+    font-weight: bold;
+}
+.hamo{
+    position: relative;
+}
+.hamo::after{
+    content: '';
+    position: absolute;
+bottom: 0;  
+    left: 50%;
+    transform: translateX(-45%);
+    width: 93%;
+    height:2px;
+    background-color: #c9c9c9;
+}
+.lila{
+    color: #D2044C;
+    cursor: pointer;
+}
+.lila:hover{
+    text-decoration: underline;
+}
