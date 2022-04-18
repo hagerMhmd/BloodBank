@@ -14,7 +14,7 @@ export default function Admin() {
         console.log(values);
     }
     function isEmpty() {
-        if (values.name === '' || values.password === '') {
+        if (values.name === undefined || values.password === undefined) {
             setInputsReq(<span className="mb-2 d-block text-danger">All inputs required</span>)
         } else {
             setInputsReq('')
