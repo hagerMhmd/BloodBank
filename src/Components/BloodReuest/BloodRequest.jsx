@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 export default function BloodRequest() {
     const [values, setValues] = useState([])
 
-
-
     function getDonateInfo(e) {
         let myValue = { ...values }
         myValue[e.target.name] = e.target.value
@@ -12,7 +10,6 @@ export default function BloodRequest() {
         console.log(myValue);
         console.log(values);
     }
-
     useEffect(() => {
         setValues()
     }, [])
@@ -20,10 +17,11 @@ export default function BloodRequest() {
     }, [values])
     function submitRequest(e) {
         e.preventDefault()
+        document.querySelector('#requestForm').classList.add('d-none')
+        document.querySelector('#response').classList.replace('d-none', 'd-block')
     }
-
     return <>
-        <section className='donateBox py-5 mt-4'>
+        <section id='requestForm' className='donateBox py-5 mt-4'>
             <div className="container w-50 pb-5 mt-5">
                 <div className="shadow rounded-3 pb-5">
                     <h2 className='text-center py-3 mb-4 text-white bg-dark'>MAKE DONATE REQUEST</h2>
@@ -77,6 +75,13 @@ export default function BloodRequest() {
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </section>
+        <section id='response' className='donateBox d-none py-5 mt-5'>
+            <div className="container d-flex align-items-center w-50 pb-5 mt-5">
+                <div className="shadow rounded-3 mt-5">
+                    <h6 className='p-5 text-success'>Your request has been recived successfully and will be replied within 24 hours</h6>
                 </div>
             </div>
         </section>
