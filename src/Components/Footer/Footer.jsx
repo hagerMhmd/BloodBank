@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../../Imgs/blood bank-2-2.png'
+// import { Link } from 'react-router-dom'
+// import logo from '../../Imgs/blood bank-2-2.png'
 
 export default function Footer() {
   return <>
-    <footer className='container-fluid'>
+    {/* <footer className='container-fluid'>
       <div className=" row">
         <div className="col-md-4">
           <div className="text-center py-5">
@@ -61,6 +61,6 @@ export default function Footer() {
 
 
 
-    </footer>
+    </footer> */}
   </>
 }

@@ -21,6 +21,7 @@ import Countonme from './Components/Countonme/Countonme';
 import Donors from './Components/Donors/Donors';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Supportbox from "./Components/Supportbox/Supportbox";
+import Admin from "./Components/Admin/Admin";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
             <Route path="supportbox" element={<Supportbox />} />
             <Route path='/bloodrequest' element={<BloodRequest />} />
             <Route path='/bloodrequest' element={< BloodRequest />} />
+            <Route path='/admin' element={< Admin />} />
             <Route path='/donors' element={<Donors />} />
             <Route path='*' element={<h1>404</h1>} />
         </Routes>

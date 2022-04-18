@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Onegative({ typeStyle, type, info, info2, Percentage, BloodTypes, RedCells, Platelets, Plasma }) {
+export default function TypeDetails({ typeStyle, type, info, info2, Percentage, BloodTypes, RedCells, Platelets, Plasma }) {
     return <>
         <section id='typeOpositive' className='pt-5'>
             <div className="container pt-5 pb-3">

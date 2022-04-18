@@ -27,6 +27,5 @@ export default function Onegative() {
         </div>
       </div>
     </div>
-
   </>
 }
