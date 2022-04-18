@@ -1,0 +1,48 @@
+.con{
+    height: 520px;
+}
+
+.img1{
+    background-image: url(/src/Imgs/Banner.png);
+    height: 220px;
+    background-size: cover;
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
+
+.all{
+    transition: all 1s;
+    overflow: hidden;
+}
+.all:hover{
+    transform: scale(.92);
+}
+
+.img2{
+    background-image: url(/src/Imgs/Volunteer.jpg);
+    height: 290px;
+    background-size: cover;
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
+
+.imgwrap{
+    height: 520px;
+    background-color: black;
+    background-image: url(/src/Imgs/Livessaved.jpg);
+    background-size: cover;
+    border-radius: 2%;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height:100%;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner{
+    text-align:center;
+    color: white;
+}

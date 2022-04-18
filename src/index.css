@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* .navbar-dark{
+  background-color: rgba(0,0,0,0.9) !important;
+} */
+.slick-dots li button:before {
+	content: '' !important;
+	width: 90px !important;
+	background-color: black !important;
+	height: 5px !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slick-dots li {
+	width: 100px !important;
+	margin: 0 !important;
+}
+.slick-dots {
+	display: block !important;
+	bottom: 5% !important;
+}
+#bloodType h1 {
+	font-size: 80px !important;
+	font-weight: 700;
+}
+.type-o-,
+.bloodMethods {
+	background-color: #ab192d;
+}
+.type-o-positive {
+	background-color: #d28235;
+}
+.type-a- {
+	background-color: #cfb023;
+}
+.type-a-positive {
+	background-color: #f1b434;
+}
+.type-b- {
+	background-color: #279989;
+}
+.type-b-positive {
+	background-color: #85b09a;
+}
+.type-ab- {
+	background-color: #007db6;
+}
+.type-ab-positive {
+	background-color: #5bc2e7;
+}
+.brdr {
+	background-color: #333;
+	width: 20rem;
+	height: 1px;
+	text-align: center !important;
+}
+/* -------------------------------------------- O Negative type */
+.h2Color {
+	color: #ab192d;
+}
+/* -------------------------------------------- donateBox */
+@media screen and (max-width: 768px) {
+	.donateBox .container {
+		width: 100% !important;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 992px)  {
+	.donateBox .container {
+		width: 90% !important;
+	}
+}
+@media screen and (min-width: 993px) (max-width: 1200px) {
+	.donateBox .container {
+		width: 80% !important;
+	}
 }

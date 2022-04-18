@@ -1,0 +1,23 @@
+.bg {
+	height: 100vh !important;
+	background-image: url(../../Imgs/homepage.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: cover;
+}
+.bg2 {
+	height: 100vh !important;
+	background-image: url(../../Imgs/Website-Sliders-2021-7.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: cover;
+}
+.font {
+	font-size: 4rem !important;
+	font-weight: bolder;
+}
+@media screen and (max-width: 992px) {
+	.font {
+		font-size: 3rem !important;
+	}
+}
